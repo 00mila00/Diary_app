@@ -1,13 +1,67 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(0deg, rgb(207, 233, 255) 0%, rgb(255, 162, 201) 100%);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header button {
+  background-color: rgba(247, 57, 88,0.8);
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  padding: 2px 8px;
+  /* padding: 8px 16px; */
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 20px;
+  
+}
+
+.header button:hover {
+  background-color: rgb(250, 28, 58);
+}
+
+.menu {
+  background-color: rgba(255, 231, 242, 0.8);
+  padding: 40px 20px;
+  width: 1000px;
+  border-radius: 5%;
+  margin: 50px auto;
+}
+
+
+.menu2 {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 40px 20px;
+  width: 700px;
+  border-radius: 40px;
+  margin: 150px auto;
+  border: 5px dotted rgba(255, 99, 99,0.5);
 }

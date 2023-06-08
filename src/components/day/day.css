@@ -1,0 +1,81 @@
+/* .day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    font-size: large;
+  }
+   */
+  .day:hover {
+    background-color: #dcdcdc;
+  }
+
+  .day.disabled:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .day.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .day.disabled {
+    color: #ccc;
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+  }
+  
+  .day-number {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .heart {
+    color: #dd3333;
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #fffefe;
+  }
+  
+  .day p {
+    margin: 0;
+  }
+  
+  .heart-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000;
+  }
+  
+  .heart-button:hover {
+    color: #ff0000;
+  }
+  
+  .today {
+    background-color: #fda8c4;
+    color: #fff;
+  }
+  

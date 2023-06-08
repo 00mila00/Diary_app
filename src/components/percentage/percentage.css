@@ -1,0 +1,87 @@
+.percentage-container {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #fff; */
+  /* width: 1000px; */
+  
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.input-container .input-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #646464;
+}
+
+.input-container input[type="text"] {
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  border: 2px rgb(255, 255, 255) solid;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #727272;
+  font-size: 14px;
+  margin-bottom: 5px;
+  
+}
+
+.button-container {
+  margin: 30px 0;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff698f;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.button-container button:hover {
+  background-color: #e45075;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  width: 400px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff698f;
+  transition: width 0.5s ease-in-out;
+}
+
+.percentage-label {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff698f;
+}

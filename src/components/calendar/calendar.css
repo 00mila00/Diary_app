@@ -1,0 +1,33 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .empty-day {
+    height: 40px;
+  }
+  
+  .day {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 15px;
+    height: 90px;
+    border-radius: 20%;
+    cursor: pointer;
+    /* background-color: #f2f2f2; */
+    font-size: 1.5rem
+  }
+  
+  .day:hover {
+    background-color: #fda8c4;
+  }
+  
+  .day.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
