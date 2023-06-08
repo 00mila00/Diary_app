@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+App is in progress. Currently you can add heart 💘 to the day in the Calendar, 
+and becouse of the hearts you can check your compatibility with other person, based of his/her name. 
+
+
 ## Available Scripts
 
 In the project directory, you can run:
