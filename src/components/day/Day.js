@@ -55,7 +55,6 @@ const Day = ({ day, month, year, onSelect, disabled, onHeartClick }) => {
   return (
     <div className={classNames} onClick={handleClick}>
       <p>{day}</p>
-
       <button
         className={`heart-button ${isHeartClicked ? 'clicked' : ''}`}
         onClick={handleHeartClick}
