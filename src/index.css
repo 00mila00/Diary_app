@@ -31,7 +31,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: -30px;
 }
 
 .header button {
@@ -52,22 +53,37 @@ h1 {
 }
 
 .menu {
+  z-index: 50;
   background-color: rgba(255, 231, 242, 0.8);
-  padding: 40px 20px;
-  width: 1000px;
+  padding: 30px 20px;
+  max-width: 1000px;
   border-radius: 5%;
   margin: 50px auto;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    padding: 20px;
+    margin: 30px auto;
+  }
+}
 
 .menu2 {
   background-color: rgba(255, 255, 255, 0.4);
   padding: 40px 20px;
-  width: 700px;
+  max-width: 700px;
   border-radius: 40px;
   margin: 100px auto 80px;
-  border: 5px dotted rgba(255, 99, 99,0.5);
+  border: 5px dotted rgba(255, 99, 99, 0.5);
 }
+
+@media (max-width: 768px) {
+  .menu2 {
+    padding: 20px;
+    margin: 50px auto;
+  }
+}
+
 
 .icon:hover {
   color: rgb(255, 0, 64); /* Change to your desired hover color */

@@ -12,13 +12,14 @@ const Calendar = ({ currentDate }) => {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
   const days = [];
-  const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; // Week day labels
+  const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
   // Add week day labels
   for (let i = 0; i < 7; i++) {
+    const weekday = window.innerWidth < 768 ? weekDays[i].slice(0, 3) : weekDays[i];
     days.push(
       <div key={`weekday-${i}`} className="weekday">
-        {weekDays[i]}
+        {weekday}
       </div>
     );
   }
@@ -52,10 +53,11 @@ const Calendar = ({ currentDate }) => {
   }
 
   // Add days from next month
-  const totalDays = days.length - 7; // Subtract 7 for the week day labels
+  const totalDays = days.length - 7;
   const numRows = Math.ceil(totalDays / 7);
-  const remainingCells = numRows === 6 ? 42 - totalDays : 35 - totalDays; // Total cells in a 6-row or 5-row calendar
+  const remainingCells = 7 * numRows - totalDays;
   const nextMonthStartDay = daysInMonth + 1;
+
   for (let i = nextMonthStartDay; i <= nextMonthStartDay + remainingCells - 1; i++) {
     const nextMonthDay = i - nextMonthStartDay + 1;
     days.push(
@@ -67,6 +69,12 @@ const Calendar = ({ currentDate }) => {
         disabled
       />
     );
+  }
+
+  // Add empty cells if necessary to maintain 7-day rows
+  const remainingWeekCells = 7 - (totalDays % 7);
+  for (let i = 0; i < remainingWeekCells; i++) {
+    days.push(<div key={`empty-${i}`} className="empty-day" />);
   }
 
   return (

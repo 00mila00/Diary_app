@@ -1,33 +1,60 @@
 .calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-gap: 10px;
-    max-width: 900px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, minmax(0, 1fr));
+  grid-gap: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    grid-gap: 6px;
+    grid-row-gap: 1px;
+    /* grid-auto-rows: minmax(0, 1fr);  */
   }
-  
-  .empty-day {
-    height: 40px;
+}
+
+.empty-day {
+  padding-top: calc(100% / 7);
+}
+
+.weekday {
+  font-size: 1rem;
+  margin-bottom: 0;
+  margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+  .weekday {
+    font-size: 0.8rem;
   }
-  
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  height: 90px;
+  border-radius: 20%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
   .day {
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-    padding-top: 15px;
-    height: 90px;
-    border-radius: 20%;
-    cursor: pointer;
-    /* background-color: #f2f2f2; */
-    font-size: 1.5rem
+    height: 60px;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    margin: 0;
   }
-  
-  .day:hover {
-    background-color: #fda8c4;
-  }
-  
-  .day.selected {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
+}
+
+.day:hover {
+  background-color: #fda8c4;
+}
+
+.day.selected {
+  background-color: #007bff;
+  color: #fff;
+}
