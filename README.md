@@ -3,7 +3,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 App is in progress. Currently you can add heart 💘 to the day in the Calendar, 
-and becouse of the hearts you can check your compatibility with other person, based of his/her name. 
+and because of the hearts you can check your compatibility with other person, based of his/her name. 
+
+See the app here:
+https://master--moodheart.netlify.app/
 
 
 ## Available Scripts
