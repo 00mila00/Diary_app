@@ -5,13 +5,18 @@
   grid-gap: 10px;
   max-width: 900px;
   margin: 0 auto;
+  overflow: auto;
 }
 
 @media (max-width: 768px) {
   .calendar {
-    grid-gap: 6px;
-    grid-row-gap: 1px;
-    /* grid-auto-rows: minmax(0, 1fr);  */
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0 10px;
+    overflow: visible;
   }
 }
 
@@ -39,10 +44,11 @@
   height: 90px;
   border-radius: 20%;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
+  
   .day {
     height: 60px;
     padding-top: 5px;
