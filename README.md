@@ -1,14 +1,13 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-App is in progress. Currently you can add heart 💘 to the day in the Calendar, 
-and because of the hearts you can check your compatibility with other person, based of his/her name. 
+# Hello reader :)
+App is in progress. 
+Currently you can add heart 💘 to the day in the Calendar, add some diary notes for every day. 
+and because of the hearts you can check your compatibility with other person (%), based of his/her name. 
 
 See the app here:
 https://master--moodheart.netlify.app/
 
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## Available Scripts
 
 In the project directory, you can run:
