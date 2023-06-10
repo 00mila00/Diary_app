@@ -67,7 +67,7 @@
   
   @media (max-width: 768px) {
     .day {
-      font-size: 0.8rem; /* Adjust the font size for the day */
+      font-size: 0.7rem; /* Adjust the font size for the day */
       padding: 0 4px;
     }
     

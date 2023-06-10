@@ -5,6 +5,7 @@
 
 .input-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 10px;
 }
@@ -14,16 +15,19 @@
   flex-direction: column;
   align-items: center;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .input-container label {
   margin-bottom: 5px;
   font-weight: bold;
   color: #646464;
+  font-size: 14px;
 }
 
 .input-container input[type="text"] {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: 30px;
   padding: 5px;
   border: 2px rgb(255, 255, 255) solid;
@@ -32,7 +36,10 @@
   color: #727272;
   font-size: 14px;
   margin-bottom: 5px;
-  
+}
+
+.input-container:not(:last-child) .input-label {
+  margin-right: 20px;
 }
 
 .button-container {
@@ -81,4 +88,23 @@
   font-size: 14px;
   font-weight: bold;
   color: #ff698f;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .input-container .input-label {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .input-container input[type="text"] {
+    max-width: 100%;
+    width: 300px;
+  }
+
+  .input-container:not(:last-child) .input-label {
+    margin-right: 6;
+  }
 }

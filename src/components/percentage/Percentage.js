@@ -36,7 +36,7 @@ const Percentage = () => {
       </div>
       <div className="input-container">
         <div className="input-label">
-          <label htmlFor="name1">Name 1</label>
+          {/* <label htmlFor="name1">Name 1</label> */}
           <input
             type="text"
             id="name1"
@@ -46,7 +46,7 @@ const Percentage = () => {
           />
         </div>
         <div className="input-label">
-          <label htmlFor="name2">Name 2</label>
+          {/* <label htmlFor="name2">Name 2</label> */}
           <input
             type="text"
             id="name2"
