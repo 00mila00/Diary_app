@@ -2,7 +2,7 @@ import React from 'react';
 import Day from '../day/Day';
 import './calendar.css';
 
-const Calendar = ({ currentDate }) => {
+const Calendar = ({ currentDate, onSelect }) => {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth();
   const day = currentDate.getDate();
@@ -48,6 +48,7 @@ const Calendar = ({ currentDate }) => {
         month={month}
         year={year}
         isCurrentDay={isCurrentDay}
+        onSelect={onSelect} // Pass the onSelect prop to the Day component
       />
     );
   }
@@ -67,6 +68,7 @@ const Calendar = ({ currentDate }) => {
         month={month + 1}
         year={year}
         disabled
+        onSelect={onSelect} // Pass the onSelect prop to the Day component
       />
     );
   }

@@ -24,6 +24,12 @@ const App = () => {
     setWindowHeight(window.innerHeight);
   };
 
+  const handleDateSelect = (selectedDate) => {
+    // Handle the selected date
+    console.log('Selected date:', selectedDate);
+    // Perform any other logic or state updates here
+  };
+
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
@@ -49,7 +55,7 @@ const App = () => {
           <h2>{currentDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}</h2>
           <button onClick={handleNextMonth}>&gt;</button>
         </div>
-        <Calendar currentDate={currentDate} />
+        <Calendar currentDate={currentDate} onSelect={handleDateSelect} />
       </div>
       <div className='menu2'>
         <Percentage></Percentage>

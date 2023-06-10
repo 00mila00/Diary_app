@@ -1,33 +1,71 @@
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffe8e8;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #464646;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: dotted 5px #ffacc8;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.selectedDate {
+  color:#ff4081;
+  margin-top: 20px;
+  height: 40px;
   
-  .popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
+}
+.message {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.datePopup {
+  color: #636363;
+  font-size: 1.2rem;
+  height: 60px;
   
-  .close-btn {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .close-btn:hover {
-    background-color: #0056b3;
-  }
-  
+}
+.love-message {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ff4081;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  color: #464646;
+}
+
+button {
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+
+  margin: 25px 0 10px;
+}
+
+.close-btn {
+  margin: 10px 0 20px;
+  background-color: #ff7640;
+}

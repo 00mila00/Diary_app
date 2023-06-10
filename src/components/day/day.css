@@ -64,14 +64,17 @@
     background-color: #fda8c4;
     color: #fff;
   }
+  .day.has-message {
+    background-color: rgb(255, 197, 88);
+  }
   
   @media (max-width: 768px) {
     .day {
-      font-size: 0.7rem; /* Adjust the font size for the day */
+      font-size: 0.7rem;
       padding: 0 4px;
     }
     
     .heart-button {
-      font-size: 1.0rem; /* Adjust the font size for the heart icon */
+      font-size: 1.0rem;
     }
   }
