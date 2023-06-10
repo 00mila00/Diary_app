@@ -71,7 +71,7 @@
   @media (max-width: 768px) {
     .day {
       font-size: 0.7rem;
-      padding: 0 4px;
+      padding: 0 10px;
     }
     
     .heart-button {
