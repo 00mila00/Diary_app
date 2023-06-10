@@ -107,4 +107,7 @@
   .input-container:not(:last-child) .input-label {
     margin-right: 6;
   }
+  h2 {
+    font-size: 1.2rem;
+  }
 }
