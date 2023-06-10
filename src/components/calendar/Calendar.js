@@ -41,6 +41,9 @@ const Calendar = ({ currentDate, onSelect }) => {
   // Add days from current month
   for (let currDay = 1; currDay <= daysInMonth; currDay++) {
     const isCurrentDay = currDay === day;
+    const isSunday = (firstDayOfMonth + currDay - 1) % 7 === 0; // Check if it's a Sunday
+    const dayClassName = isSunday ? 'day sunday' : 'day';
+
     days.push(
       <Day
         key={currDay}
@@ -48,7 +51,8 @@ const Calendar = ({ currentDate, onSelect }) => {
         month={month}
         year={year}
         isCurrentDay={isCurrentDay}
-        onSelect={onSelect} // Pass the onSelect prop to the Day component
+        onSelect={onSelect}
+        className={dayClassName} // Add the dayClassName as a prop to the Day component
       />
     );
   }
@@ -68,7 +72,7 @@ const Calendar = ({ currentDate, onSelect }) => {
         month={month + 1}
         year={year}
         disabled
-        onSelect={onSelect} // Pass the onSelect prop to the Day component
+        onSelect={onSelect}
       />
     );
   }

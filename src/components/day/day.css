@@ -67,6 +67,10 @@
   .day.has-message {
     background-color: rgb(255, 197, 88);
   }
+  .day.sunday {
+    color: red;
+  }
+  
   
   @media (max-width: 768px) {
     .day {

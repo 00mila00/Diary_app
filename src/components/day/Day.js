@@ -28,13 +28,12 @@ const Day = ({ day, month, year, onSelect, disabled, onHeartClick, initialLoveMe
     if (showPopup) {
       return; // Return early if the popup is already open
     }
-  
+
     if (onSelect && !disabled) {
       onSelect(new Date(year, month, day));
       setShowPopup(true);
     }
   };
-  
 
   const handleHeartClick = () => {
     const updatedHeartClicked = !isHeartClicked;
@@ -68,7 +67,9 @@ const Day = ({ day, month, year, onSelect, disabled, onHeartClick, initialLoveMe
     localStorage.setItem(messageLocalStorageKey, message);
   };
 
-  const dayClassNames = `day ${disabled ? 'disabled' : ''} ${isToday ? 'today' : ''} ${loveMessage ? 'has-message' : ''}`;
+  const dayClassNames = `day ${disabled ? 'disabled' : ''} ${isToday ? 'today' : ''} ${
+    loveMessage ? 'has-message' : ''
+  } ${new Date(year, month, day).getDay() === 0 ? 'sunday' : ''}`;
 
   return (
     <div className={dayClassNames} onClick={handleClick}>

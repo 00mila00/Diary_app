@@ -32,10 +32,10 @@
   font-size: 1.2rem;
 }
 
-.datePopup {
+.datePopup, .sunset,.sunrise {
   color: #636363;
-  font-size: 1.2rem;
-  height: 60px;
+  font-size: 1.1rem;
+  height: 40px;
 }
 
 .love-message {
