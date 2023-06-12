@@ -76,7 +76,7 @@ const Popup = ({ selectedDate, onClose, initialLoveMessage, onUpdateLoveMessage 
   return (
     <div className="popup">
       <div className="popup-content">
-        <h2 className="selectedDate">Daily Diary</h2>
+        <h2 className="selectedDate" style={{fontSize: '1.5rem'}}>Daily Diary</h2>
         <p className="selectedDate">{formattedDate}</p>
         <p className="sunrise">Sunrise: {sunrise}</p>
         <p className="sunset">Sunset: {sunset}</p>
